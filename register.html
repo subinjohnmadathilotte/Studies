@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register Here</title>
+
+        <!-- EXTERNAL STYLESHEET -->
+
+        <link rel="stylesheet", type="text/css" href="Style.css" >
+
+        <!-- INTERNAL STYLESHEET -->
+
+        <style>
+            body{
+
+                background-image: url("images.jpg");
+                background-size: cover;
+            }
+            input{
+
+                color:blue ;
+            }
+
+            #Reset{
+
+                cursor: pointer;
+            }
+            footer{
+
+                text-align: center;
+                border:5px solid brown;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Register</h1>
+        </header>
+        <!-- CTRL + / TO COMMENT -->
+        <form method="POST">
+            First Name : <input type="text" id="name" name="FirstName" required><br>
+            Last Name : <input type="text"  name="LastName" required><br>
+            Email : <input type="email" name="Email" required><br>
+            Password : <input type="password" min="3" max="5" name="Password"><br>
+            Birth day :<input type="date" name="DOB" required><br>
+            Gender : <br>
+            <input type="radio"  name="Gender" value="Male">Male<br>
+            <input type="radio"  name="Gender"value="Female">Female<br>
+            
+            Hobbies :<br>
+            <input type="checkbox" name="Football" value="Football">Football<br>
+            <input type="checkbox" name="Reading" value="Reading">Reading<br>
+
+            Select Cars : <br>
+            <select >
+                <option value ="volvo" name="Volvo" value="Volvo">Volvo</option><br>
+                <option value ="Audi" name="Audi" value="Audi">Audi</option><br>
+            </select><br>
+
+            <input type="submit" value="Register">
+            <input type="reset" id="Reset" value="Reset"><br>
+
+
+            <a href="index.html">Home Page</a>
+        </form>
+        <nav><a href="https://www.google.com/" target="_blank">Just visit this</a></nav>
+        <footer>
+            <p>I Am a stupid learner</p>
+        </footer>
+       
+    </body>
+</html>
